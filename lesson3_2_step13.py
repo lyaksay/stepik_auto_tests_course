@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -32,7 +31,9 @@ class TestRegistration(unittest.TestCase):
             time.sleep(8)
             # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
             assert "Congratulations! You have successfully registered!" == welcome_text
-            self.assertEqual(welcome_text, "Congratulations! You have successfully registered!", "Registration message does not match")
+            self.assertEqual(welcome_text, "Congratulations! You have successfully registered!", "Registration "
+                                                                                                 "message does not "
+                                                                                                 "match")
 
         finally:
             # ожидание чтобы визуально оценить результаты прохождения скрипта
@@ -66,7 +67,9 @@ class TestRegistration(unittest.TestCase):
             time.sleep(8)
             # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
             # assert "Congratulations! You have successfully registered!" == welcome_text
-            self.assertEqual(welcome_text, "Congratulations! You have successfully registered!", "Registration message does not match")
+            self.assertEqual(welcome_text, "Congratulations! You have successfully registered!", "Registration "
+                                                                                                 "message does not "
+                                                                                                 "match")
 
         finally:
             # ожидание чтобы визуально оценить результаты прохождения скрипта
@@ -77,8 +80,3 @@ class TestRegistration(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-
-
-
-
